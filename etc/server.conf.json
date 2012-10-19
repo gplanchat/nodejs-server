@@ -1,0 +1,22 @@
+{
+    "cluster": {
+        "active": true,
+        "cpus": -1
+    },
+    "networking": [
+        {
+            "name": "Unsecured IPv4 HTTP",
+            "handler": "default",
+            "ssl": false,
+            "address": "127.0.0.1",
+            "port": 8000,
+            "host": "localhost",
+            "express": [
+                {
+                    "path": "/chat",
+                    "worker": "chat"
+                }
+            ]
+        }
+    ]
+}
